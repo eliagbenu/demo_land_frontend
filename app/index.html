@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="styles/login.css">
 
     <!-- endbuild -->
+    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+    
   </head>
   <body ng-app="demoLandFrontendApp">
     <!--[if lt IE 7]>
@@ -58,14 +61,17 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        
+        <script src="scripts/services/Authentication.js"></script>   
+        <script src="scripts/services/SessionService.js"></script>           
+        <script src="scripts/services/FlashService.js"></script>           
+                        
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/login.js"></script>  
         <script src="scripts/controllers/site.js"></script> 
 
         <script src="scripts/directives/messages.js"></script>  
-
-
-        <script src="scripts/services/Authentication.js"></script>                   
+                
         <!-- endbuild -->
 </body>
 </html>
